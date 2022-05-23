@@ -18,13 +18,10 @@ const About = () => {
                     display: "flex",
                     gap: 4,
                     width: "80vw",
-                    flexWrap: "wrap-reverse"
                 }}
             >
                 <Box
                     sx={{
-                        minWidth: "500px",
-                        flex: 2,
                         display: "flex",
                         flexDirection: "column",
                     }}
@@ -45,15 +42,6 @@ const About = () => {
                     </Typography>
                     <br />
                 </Box>
-
-                <Card
-                    sx={{
-                        flex: 1,
-                        minWidth: "300px",
-                    }}
-                >
-                    <CardHeader title="MEDIA" />
-                </Card>
 
             </Box>
 
