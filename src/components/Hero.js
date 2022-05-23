@@ -3,15 +3,17 @@ import { Box, Typography, Stack } from "@mui/material"
 
 const Hero = () => {
     return (
-        <Stack
-            height="100vh"
-            justifyContent="center"
+        <Box
+            sx={{
+                display: "flex",
+                height: "100vh",
+                justifyContent: "center",
+                alignItems: "center",
+                padding: 5
+            }}
             id="hero"
-            alignItems="center"
-            padding={5}
         >
             <Box
-            
             >
                 <Typography
                     variant="h2"
@@ -25,7 +27,7 @@ const Hero = () => {
                 </Typography>
             </Box>
 
-        </Stack>
+        </Box>
 
     )
 }

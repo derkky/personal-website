@@ -4,49 +4,68 @@ import ProjectCard from "./ProjectCard.js"
 const Projects = () => {
     return (
 
-        <Stack
-            minHeight="100vh"
+        <Box
             id="projects"
-            alignItems="center"
+            sx={{
+                minHeight: "100vh",
+                display: "flex",
+                justifyContent: "center",
+                padding: 5
+            }}
         >
-            <Typography
-                variant="h2"
-                marginY={15}
-            >
-                Projects
-            </Typography>
             <Box
                 sx={{
                     display: "flex",
-                    flexWrap: "wrap",
-                    justifyContent: "center",
-                    gap: 4
+                    flexDirection: "column",
+                    width: "80vw"
                 }}
             >
-                <ProjectCard
-                    title="Keptan Classifer"
-                    description={
-                        <>
-                            <p> App which utilises NLP and Random Forest to classify math questions into one of eight categories. </p>
-                            <p> Algorithm developed using Python, sklearn, and NLTK. </p>
-                            <p> App built using Flask and React. </p>
-                        </>
-                    }
-                />
+                <Typography
+                    variant="h2"
+                    marginTop={15}
+                    marginBottom={5}
+                >
+                    Projects
+                </Typography>
 
-                <ProjectCard
-                    title="Kommentar"
-                    description={
-                        <>
-                            <p> App which allows automates text analysis of a given Youtube video's comments. </p>
-                            <p>Built using RShiny. </p>
-                        </>
-                    }
-                />
+                <Box
+                    sx={{
+                        display: "flex",
+                        flexWrap: "wrap",
+                        justifyContent: "space-between",
+                        gap: 2
+                    }}
+                >
+                    <ProjectCard
+                        title="Keptan Classifer"
+                        description={
+                            <>
+                                <Typography> App which utilises NLP and Random Forest to classify math questions into one of eight categories. </Typography>
+                                <br />
+                                <Typography> Algorithm developed using Python, sklearn, and NLTK. </Typography>
+                                <Typography> App built using Flask and React. </Typography>
+                            </>
+                        }
+                    />
+
+                    <ProjectCard
+                        title="Kommentar"
+                        description={
+                            <>
+                                <Typography> App which allows automates text analysis of a given Youtube video's comments. </Typography>
+                                <br />
+                                <Typography>Built using RShiny. </Typography>
+                            </>
+                        }
+                    />
+
+                </Box>
 
             </Box>
 
-        </Stack>
+
+
+        </Box>
 
     )
 }

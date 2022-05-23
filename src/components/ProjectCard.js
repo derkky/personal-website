@@ -3,15 +3,15 @@ import { Card, CardHeader, CardContent, Typography } from "@mui/material"
 const ProjectCard = (props) => {
     return (
         <Card
-            sx={{ width: "500px" }}
+            sx={{
+                width: { xs: "80vw", sm: "80vw", md: "38vw" }
+            }}
         >
             <CardHeader
                 title={props.title}
             />
             <CardContent>
-                <Typography>
-                    {props.description}
-                </Typography>
+                {props.description}
             </CardContent>
         </Card>
     )
