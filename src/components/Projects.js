@@ -1,28 +1,17 @@
 import { Toolbar, CardHeader, CardMedia, CardContent, Typography, Stack, Box } from "@mui/material"
 import ProjectCard from "./ProjectCard.js"
+import SectionContainer from "./SectionContainer.js"
+import SectionContentContainer from "./SectionContentContainer.js"
 
 const Projects = () => {
     return (
 
-        <Box
+        <SectionContainer
             id="projects"
-            sx={{
-                minHeight: "100vh",
-                display: "flex",
-                justifyContent: "center",
-                padding: 5
-            }}
         >
-            <Box
-                sx={{
-                    display: "flex",
-                    flexDirection: "column",
-                    width: "50vw"
-                }}
-            >
+            <SectionContentContainer>
                 <Typography
                     variant="h2"
-                    marginTop={15}
                     marginBottom={5}
                 >
                     Projects
@@ -61,11 +50,11 @@ const Projects = () => {
 
                 </Box>
 
-            </Box>
+            </SectionContentContainer>
 
 
 
-        </Box>
+        </SectionContainer>
 
     )
 }

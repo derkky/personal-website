@@ -1,21 +1,15 @@
-import { Box, Typography, Stack } from "@mui/material"
+import { Box, Typography, Toolbar } from "@mui/material"
+import SectionContainer from "./SectionContainer"
+import SectionContentContainer from "./SectionContentContainer"
 
 
 const Hero = () => {
     return (
-        <Box
-            sx={{
-                display: "flex",
-                height: "100vh",
-                justifyContent: "center",
-                alignItems: "center",
-                padding: 5
-            }}
+        <SectionContainer
+            centered
             id="hero"
         >
-            <Box
-                sx={{width: "50vw"}}
-            >
+            <SectionContentContainer>
                 <Typography
                     variant="h2"
                 >
@@ -26,9 +20,9 @@ const Hero = () => {
                 >
                     a full-stack developer and data analyst.
                 </Typography>
-            </Box>
+            </SectionContentContainer>
 
-        </Box>
+        </SectionContainer>
 
     )
 }

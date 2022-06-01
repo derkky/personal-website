@@ -37,52 +37,71 @@ const NavBar = () => {
                 <Toolbar
                     disableGutters={true}
                     sx={{
-                        paddingX: { xs: 2, sm: 5, md: 20 },
+                        display: "flex",
+                        justifyContent: "center",
                         paddingY: 2
                     }}
                 >
-                    <Link
-                        color="inherit"
-                        sx={{ display: "flex", flex: 1 }}
-                        variant="h4"
-                        onClick={(e) => {
-                            e.preventDefault()
-                            scroll("#hero")
-                        }}
-                        underline="none"
-                        href="#"
-                    >
-                        Don Foh
-                    </Link>
-
                     <Box
                         sx={{
-                            display: { xs: "none", md: "flex" },
-                            gap: 3
+                            display: "flex",
+                            width: "90%",
+                            maxWidth: "1500px",
+                            justifyContent: "space-between"
                         }}
-                        variant="text"
-                        color="inherit"
                     >
-                        {pages.map(page =>
-                            <Button
-                                color="inherit"
-                                key={page.link}
-                                onClick={() => scroll(page.link)}
-                            >
-                                {page.title}
-                            </Button>
-                        )}
+
+                        <Link
+                            color="inherit"
+                            variant="h4"
+                            onClick={(e) => {
+                                e.preventDefault()
+                                scroll("#hero")
+                            }}
+                            underline="none"
+                            href="#"
+                            sx={{
+                                display: "flex",
+                                alignItems: "center",
+                            }}
+                        >
+                            Don Foh
+                        </Link>
+
+
+                        <Box
+                            sx={{
+                                display: { xs: "none", md: "flex" },
+                                gap: 3
+                            }}
+                            variant="text"
+                            color="inherit"
+                        >
+                            {pages.map(page =>
+                                <Button
+                                    color="inherit"
+                                    key={page.link}
+                                    onClick={() => {
+                                        scroll(page.link)
+                                    }}
+                                >
+                                    {page.title}
+                                </Button>
+                            )}
+
+                        </Box>
+
+                        <IconButton
+                            sx={{ display: { xs: "flex", md: "none" } }}
+                            size="large"
+                            color="inherit"
+                            onClick={(e) => { setAnchorEl(e.currentTarget) }}
+                        >
+                            <MenuIcon />
+                        </IconButton>
 
                     </Box>
 
-                    <IconButton
-                        sx={{ display: { xs: "flex", md: "none" } }}
-                        size="large"
-                        color="inherit"
-                        onClick={(e) => { setAnchorEl(e.currentTarget) }}
-                    >
-                        <MenuIcon />
-                    </IconButton>
                 </Toolbar>
             </AppBar>
 

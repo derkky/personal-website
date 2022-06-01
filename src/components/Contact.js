@@ -1,20 +1,24 @@
 import { Paper, Typography, Stack } from "@mui/material"
+import SectionContainer from "./SectionContainer"
+import SectionContentContainer from "./SectionContentContainer"
 
 const Contact = () => {
     return (
-        
-        <Stack
-            minHeight="100vh"
-            justifyContent="center"
+
+        <SectionContainer
             id="contact"
+            centered
         >
-            <Typography
-                align="center"
-                variant="h2"
-            >
-                Contact
-            </Typography>
-        </Stack>
+            <SectionContentContainer>
+                <Typography
+                    align="center"
+                    variant="h2"
+                >
+                    Contact
+                </Typography>
+            </SectionContentContainer>
+
+        </SectionContainer>
 
     )
 }

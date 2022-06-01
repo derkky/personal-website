@@ -19,7 +19,6 @@ const TechUsed = (props) => {
                 <p>2</p>
                 <p>2</p>
 
-
             </Box>
         </Box>
     )

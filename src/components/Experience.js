@@ -1,29 +1,25 @@
-import { Box, Typography, Card, CardHeader, CardContent } from "@mui/material"
+import { Box, Typography, Card, CardHeader, CardContent, Toolbar } from "@mui/material"
 import { Timeline, TimelineItem, TimelineSeparator, TimelineDot, TimelineConnector, TimelineContent, TimelineOppositeContent } from "@mui/lab"
 import TechUsed from "./TechUsed"
+import SectionContainer from "./SectionContainer"
+import SectionContentContainer from "./SectionContentContainer"
 
 const Experience = () => {
     return (
 
-        <Box
+        <SectionContainer
             id="experience"
-            sx={{
-                minHeight: "100vh",
-                display: "flex",
-                justifyContent: "center",
-                padding: 5
-            }}
         >
-            <Box
+
+            <SectionContentContainer
                 sx={{
                     display: "flex",
                     flexDirection: "column",
-                    width: "50vw"
+                    width: { sm: "90vw", md: "50vw" }
                 }}
             >
                 <Typography
                     variant="h2"
-                    marginTop={15}
                     marginBottom={5}
                 >
                     Experience
@@ -32,7 +28,10 @@ const Experience = () => {
                 <Timeline>
                     <TimelineItem>
                         <TimelineOppositeContent
-                            style={{flex: 0.2}}
+                            sx={{
+                                flex: 0.2,
+                                display: { xs: "none", sm: "none", md: "block" }
+                            }}
                         >
                             May 2022 to Present
                         </TimelineOppositeContent>
@@ -40,13 +39,15 @@ const Experience = () => {
                             <TimelineDot />
                             <TimelineConnector />
                         </TimelineSeparator>
-                        <TimelineContent> 
+                        <TimelineContent>
                             <Card>
                                 <CardHeader
-                                    title="Job Title"
-                                    subheader="Company"
+                                    title="Job Title | Company"
+                                    subheader="May 2022 to Present"
                                     subheaderTypographyProps={{
-                                        variant: "h6"
+                                        sx: {
+                                                display: { xs: "block", sm: "block", md: "none" }
+                                        }
                                     }}
                                 />
 
@@ -65,20 +66,23 @@ const Experience = () => {
 
 
                     <TimelineItem>
-                        <TimelineOppositeContent 
-                            style={{flex: 0.2}}
+                        <TimelineOppositeContent
+                            sx={{
+                                flex: 0.2,
+                                display: { xs: "none", sm: "none", md: "block" }
+                            }}
                         />
                         <TimelineSeparator>
                             <TimelineDot />
                         </TimelineSeparator>
-                        <TimelineContent/>
+                        <TimelineContent />
                     </TimelineItem>
                 </Timeline>
 
-            </Box>
+            </SectionContentContainer>
 
 
-        </Box>
+        </SectionContainer>
 
     )
 }
