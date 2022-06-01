@@ -17,7 +17,7 @@ const Projects = () => {
                 sx={{
                     display: "flex",
                     flexDirection: "column",
-                    width: "80vw"
+                    width: "50vw"
                 }}
             >
                 <Typography
@@ -32,7 +32,7 @@ const Projects = () => {
                     sx={{
                         display: "flex",
                         flexWrap: "wrap",
-                        justifyContent: "space-between",
+                        justifyContent: "space-around",
                         gap: 2
                     }}
                 >

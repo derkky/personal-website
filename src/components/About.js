@@ -17,7 +17,7 @@ const About = () => {
                 sx={{
                     display: "flex",
                     gap: 4,
-                    width: "80vw",
+                    width: "50vw",
                 }}
             >
                 <Box
@@ -38,7 +38,16 @@ const About = () => {
                     </Typography>
                     <br />
                     <Typography>
-                        My areas of specialisation are data analytics and web development.
+                        My areas of specialisation are data analytics and web development. I am highly interested in using data to solve problems and then 
+                        packaging them in user-friendly apps.
+                    </Typography>
+                    <br />
+                    <Typography>
+                        I am currently working on <strong> Tele-Sticker</strong>, an app which streamlines the sticker-making process in Telegram.
+                    </Typography>
+                    <br />
+                    <Typography>
+                        When I'm not coding, I enjoy reading and watching movies.
                     </Typography>
                     <br />
                 </Box>

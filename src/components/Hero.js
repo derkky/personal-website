@@ -14,6 +14,7 @@ const Hero = () => {
             id="hero"
         >
             <Box
+                sx={{width: "50vw"}}
             >
                 <Typography
                     variant="h2"

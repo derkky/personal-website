@@ -4,7 +4,7 @@ const ProjectCard = (props) => {
     return (
         <Card
             sx={{
-                width: { xs: "80vw", sm: "80vw", md: "38vw" }
+                width: { xs: "80vw", sm: "80vw", md: "23vw" }
             }}
         >
             <CardHeader
