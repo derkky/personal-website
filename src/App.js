@@ -21,7 +21,7 @@ function App() {
 
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Stack spacing={2}>
+      <Stack spacing={2} sx={{overflow: "hidden"}}>
         <NavBar />
         <Hero />
         <About/>

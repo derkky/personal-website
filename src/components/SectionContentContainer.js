@@ -7,7 +7,7 @@ const SectionContentContainer = (props) => {
                 display: "flex",
                 flexDirection: "column",
                 width: "50%",
-                minWidth: "320px"
+                minWidth: "350px"
             }}
         >
 
