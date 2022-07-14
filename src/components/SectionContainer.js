@@ -7,7 +7,7 @@ const SectionContainer = (props) => {
             sx={{
                 display: "flex",
                 flexDirection: "column",
-                height: "100vh",
+                minHeight: "100vh",
                 width: "100vw",
                 alignItems: "center",
                 justifyContent: props.centered ? "center" : "normal",

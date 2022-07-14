@@ -1,4 +1,12 @@
-import {Typography, Box} from "@mui/material"
+import { Typography, Box } from "@mui/material"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faReact, faPython, faJs } from "@fortawesome/free-brands-svg-icons"
+
+const icons = {
+    react: faReact,
+    js: faJs,
+    python: faPython
+}
 
 const TechUsed = (props) => {
     return (
@@ -15,10 +23,8 @@ const TechUsed = (props) => {
                     gap: "2em"
                 }}
             >
-                <p>1</p>
-                <p>2</p>
-                <p>2</p>
-
+                {props.tech.map(tech => <FontAwesomeIcon icon={icons[tech]} size="2x" key={tech}/>)}
+                
             </Box>
         </Box>
     )
