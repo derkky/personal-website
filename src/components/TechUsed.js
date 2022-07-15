@@ -5,6 +5,10 @@ import { ReactComponent as PythonIcon } from "../assets/python.svg"
 import { ReactComponent as ExIcon } from "../assets/express.svg"
 import { ReactComponent as MongoIcon } from "../assets/mongodb.svg"
 import { ReactComponent as HerokuIcon } from "../assets/heroku.svg"
+import { ReactComponent as FlaskIcon } from "../assets/flask.svg"
+import { ReactComponent as TableauIcon } from "../assets/tableau.svg"
+import { ReactComponent as PostgresIcon } from "../assets/postgresql.svg"
+import { ReactComponent as RIcon } from "../assets/r.svg"
 
 
 // from https://simpleicons.org/
@@ -15,7 +19,11 @@ const icons = {
     python: <PythonIcon />,
     express: <ExIcon />,
     heroku: <HerokuIcon />,
-    mongodb: <MongoIcon />
+    mongodb: <MongoIcon />,
+    flask: <FlaskIcon />,
+    tableau: <TableauIcon />,
+    postgresql: <PostgresIcon />,
+    r: <RIcon />
 }
 
 const TechUsed = (props) => {

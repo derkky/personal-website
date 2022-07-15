@@ -6,12 +6,37 @@ import ExperienceCard from "./ExperienceCard"
 
 const experience = [
     {
+        title: "Data Analyst",
+        company: "NTUC LearningHub",
+        duration: "May 2022 to Present",
+        jobDescription: [
+            "Maintain Tableau dashboards and reports",
+            "Conduct User Acceptance Testing",
+            "Communicate with business users to redesign dashboards",
+            "Assist in database migration to data warehouse",
+            "Conduct data validation"
+        ],
+        tech: ["postgresql", "tableau", "python"]
+    },
+    {
+        title: "Research Assistant",
+        company: "NUS Institute of Operations Research & Analytics",
+        duration: "Apr 2022 to Present",
+        jobDescription: [
+            "Develop a Math word question classifier with over 97% accuracy",
+            "Deploy ML algorithm to responsive web app with React frontend, Flask backend and Heroku",
+            "Research embeddings techniques such as Word2Vec, Doc2Vec, FastText",
+            "Explore various deep learning techniques for NLP such as OpenAI-GPT3 and transfer learning"
+        ],
+        tech: ["python", "flask", "react", "heroku"]
+    },
+    {
         title: "Full Stack Developer",
         company: "SUPESU",
         duration: "Dec 2021 to Present",
         jobDescription: [
             "Develop sizing recommender algorithm using machine learning",
-            "Design and develop website and admin dashboard frontend",
+            "Design and develop responsive website and admin dashboard frontend",
             "Design MongoDB database and REST APIs",
             "Integrate app with Shopify REST and GraphQL APIs",
             "Deploy app on Heroku"

@@ -1,4 +1,5 @@
-import { Card, CardHeader, CardContent, Typography } from "@mui/material"
+import { Card, CardHeader, CardContent, Box } from "@mui/material"
+import TechUsed from "./TechUsed"
 
 const ProjectCard = (props) => {
     return (
@@ -11,8 +12,9 @@ const ProjectCard = (props) => {
             <CardHeader
                 title={props.title}
             />
-            <CardContent>
+            <CardContent >
                 {props.description}
+                <TechUsed tech={props.tech} />
             </CardContent>
         </Card>
     )
