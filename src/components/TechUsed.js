@@ -1,11 +1,21 @@
-import { Typography, Box } from "@mui/material"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faReact, faPython, faJs } from "@fortawesome/free-brands-svg-icons"
+import { Typography, Box, SvgIcon } from "@mui/material"
+import { ReactComponent as ReactIcon } from "../assets/react.svg"
+import { ReactComponent as JsIcon } from "../assets/javascript.svg"
+import { ReactComponent as PythonIcon } from "../assets/python.svg"
+import { ReactComponent as ExIcon } from "../assets/express.svg"
+import { ReactComponent as MongoIcon } from "../assets/mongodb.svg"
+import { ReactComponent as HerokuIcon } from "../assets/heroku.svg"
+
+
+// from https://simpleicons.org/
 
 const icons = {
-    react: faReact,
-    js: faJs,
-    python: faPython
+    js: <JsIcon />,
+    react: <ReactIcon />,
+    python: <PythonIcon />,
+    express: <ExIcon />,
+    heroku: <HerokuIcon />,
+    mongodb: <MongoIcon />
 }
 
 const TechUsed = (props) => {
@@ -23,8 +33,9 @@ const TechUsed = (props) => {
                     gap: "2em"
                 }}
             >
-                {props.tech.map(tech => <FontAwesomeIcon icon={icons[tech]} size="2x" key={tech}/>)}
-                
+
+                {props.tech.map(tech => <SvgIcon fontSize="large"> {icons[tech]} </SvgIcon>)}
+
             </Box>
         </Box>
     )

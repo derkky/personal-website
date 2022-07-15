@@ -16,7 +16,7 @@ const experience = [
             "Integrate app with Shopify REST and GraphQL APIs",
             "Deploy app on Heroku"
         ],
-        tech: ["js", "react", "python"]
+        tech: ["js", "react", "express", "mongodb", "heroku", "python"]
     }
 ]
 
