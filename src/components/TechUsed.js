@@ -30,11 +30,11 @@ const TechUsed = (props) => {
             <Box
                 sx={{
                     display: "flex",
-                    gap: "2em"
+                    gap: "1em"
                 }}
             >
 
-                {props.tech.map(tech => <SvgIcon fontSize="large"> {icons[tech]} </SvgIcon>)}
+                {props.tech.map(tech => <SvgIcon fontSize="large" key={tech}> {icons[tech]} </SvgIcon>)}
 
             </Box>
         </Box>
