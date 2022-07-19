@@ -1,4 +1,4 @@
-import { Card, CardHeader, CardContent, Box } from "@mui/material"
+import { Card, CardHeader, CardContent, CardMedia } from "@mui/material"
 import TechUsed from "./TechUsed"
 
 const ProjectCard = (props) => {
@@ -9,6 +9,13 @@ const ProjectCard = (props) => {
                 minWidth: "300px"
             }}
         >
+            <CardMedia
+                component="img"
+                image={props.image}
+                height="150"
+                onClick={() => window.open(props.link)}
+                sx={{cursor: "pointer"}}
+            />
             <CardHeader
                 title={props.title}
             />

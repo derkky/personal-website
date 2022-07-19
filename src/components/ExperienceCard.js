@@ -1,4 +1,4 @@
-import { Card, CardHeader, CardContent, Toolbar } from "@mui/material"
+import { Card, CardHeader, CardContent } from "@mui/material"
 import TechUsed from "./TechUsed"
 import { TimelineItem, TimelineSeparator, TimelineDot, TimelineConnector, TimelineContent, TimelineOppositeContent } from "@mui/lab"
 

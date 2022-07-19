@@ -10,15 +10,19 @@ const projects = [
             <>
                 <Typography> App which utilises NLP and Random Forest to classify math questions into one of eight categories. </Typography>
             </>,
-        tech: ["python", "flask", "react", "heroku"]
+        tech: ["python", "flask", "react", "heroku"],
+        image: "keptan.PNG",
+        link: "http://ra-math-classif.herokuapp.com/"
     },
     {
         title: "commentaR",
         description:
             <>
-                <Typography> App which allows automates text analysis of a given Youtube video's comments. </Typography>
+                <Typography> App which automates sentiment analysis, topic modelling, and network analysis of a given Youtube video's comments. </Typography>
             </>,
-        tech: ["r"]
+        tech: ["r"],
+        image: "commentar.PNG",
+        link: "https://rendeavors.shinyapps.io/DBA-Shiny-Application/"
     }
 ]
 
@@ -50,6 +54,8 @@ const Projects = () => {
                             description={proj.description}
                             tech={proj.tech}
                             key={proj.title}
+                            image={proj.image}
+                            link={proj.link}
                         />)}
 
                 </Box>

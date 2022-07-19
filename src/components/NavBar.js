@@ -95,6 +95,9 @@ const NavBar = () => {
                                 variant="outlined"
                                 startIcon={<InsertDriveFileIcon />}
                                 color="inherit"
+                                onClick={() => {
+                                    window.open("don-foh-resume.pdf")
+                                }}
                             >
                                 Resume
                             </Button>
@@ -142,6 +145,9 @@ const NavBar = () => {
                         variant="outlined"
                         startIcon={<InsertDriveFileIcon />}
                         color="inherit"
+                        onClick={() => {
+                            window.open("don-foh-resume.pdf")
+                        }}
                     >
                         Resume
                     </Button>

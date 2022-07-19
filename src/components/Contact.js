@@ -21,7 +21,8 @@ const contact = [
         link: "https://kaggle.com/donfoh"
     },
     {
-        icon: <EmailIcon />
+        icon: <EmailIcon />,
+        link: "mailto:don.foh@u.nus.edu?Subject=Hello!"
     }
 ]
 
