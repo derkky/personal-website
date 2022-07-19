@@ -28,6 +28,10 @@ const About = () => {
                 </Typography>
                 <br />
                 <Typography>
+                    Aside from that, I am also the Vice President of NUS Business Analytics Consulting Team, where I'm responsible of planning the syllabus to teach junior analysts and overall management of the club.
+                </Typography>
+                <br />
+                <Typography>
                     I am currently working on <strong> Tele-Sticker</strong>, an app which streamlines the sticker-making process in Telegram.
                 </Typography>
                 <br />

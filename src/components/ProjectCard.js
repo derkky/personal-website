@@ -6,7 +6,7 @@ const ProjectCard = (props) => {
         <Card
             sx={{
                 width: "48%",
-                minWidth: "320px"
+                minWidth: "300px"
             }}
         >
             <CardHeader

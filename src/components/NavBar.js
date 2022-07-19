@@ -2,6 +2,8 @@ import { AppBar, Toolbar, Box, IconButton, ButtonGroup, Button, Typography, Menu
 import MenuIcon from "@mui/icons-material/Menu"
 import { useState } from "react"
 
+import InsertDriveFileIcon from '@mui/icons-material/InsertDriveFile';
+
 const NavBar = () => {
 
     const pages = [
@@ -89,6 +91,14 @@ const NavBar = () => {
                                 </Button>
                             )}
 
+                            <Button
+                                variant="outlined"
+                                startIcon={<InsertDriveFileIcon />}
+                                color="inherit"
+                            >
+                                Resume
+                            </Button>
+
                         </Box>
 
                         <IconButton
@@ -125,6 +135,17 @@ const NavBar = () => {
                         </MenuItem>
                     )
                 })}
+
+                <MenuItem>
+
+                    <Button
+                        variant="outlined"
+                        startIcon={<InsertDriveFileIcon />}
+                        color="inherit"
+                    >
+                        Resume
+                    </Button></MenuItem>
+
             </Menu>
 
 
