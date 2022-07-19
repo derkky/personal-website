@@ -144,7 +144,8 @@ const NavBar = () => {
                         color="inherit"
                     >
                         Resume
-                    </Button></MenuItem>
+                    </Button>
+                </MenuItem>
 
             </Menu>
 
