@@ -68,18 +68,10 @@ const NavBar = () => {
                             href="#"
                             sx={{
                                 display: "flex",
-                                alignItems: "center",
-                                gap: 2
+                                alignItems: "center"
                             }}
                         >
-                            <Box
-                                sx={{
-                                    height: "60px"
-                                }}
-                            >
-                                <img src={logo} height="100%" width="100%" style={{ objectFit: "contain" }} />
-                            </Box>
-                            <Typography sx={{ display: { xs: "none", md: "flex" } }} variant="h4">
+                            <Typography variant="h4">
                                 Don Foh
                             </Typography>
                         </Link>
