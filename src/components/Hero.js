@@ -13,10 +13,10 @@ const Hero = () => {
                     <img src="/logo.png" height="100%" width="100%" style={{objectFit: "contain"}}/>
                 </Box>
                 <Box sx={{ display: "flex", justifyContent: "space-around" }}>
-                    <Typography>
+                    <Typography variant="h6">
                         Data Analyst
                     </Typography>
-                    <Typography>
+                    <Typography variant="h6">
                         Full-Stack Developer
                     </Typography>
                 </Box>

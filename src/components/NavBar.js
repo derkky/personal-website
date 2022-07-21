@@ -35,13 +35,16 @@ const NavBar = () => {
 
     return (
         <>
-            <AppBar>
+            <AppBar
+                sx={{ height: "80px" }}
+            >
                 <Toolbar
                     disableGutters={true}
                     sx={{
                         display: "flex",
                         justifyContent: "center",
-                        paddingY: 2
+                        paddingY: 2,
+                        height: "80px"
                     }}
                 >
                     <Box
@@ -67,7 +70,14 @@ const NavBar = () => {
                                 alignItems: "center",
                             }}
                         >
-                            Don Foh
+                            <Box
+                                sx={{}}
+                            >
+                                <img src="/logo.png" height="100%" width="100%" style={{ objectFit: "contain" }} />
+                            </Box>
+                            <Typography sx={{ display: { xs: "none", md: "flex" } }} variant="h4">
+                                Don Foh
+                            </Typography>
                         </Link>
 
 
