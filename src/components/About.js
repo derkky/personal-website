@@ -23,12 +23,11 @@ const About = () => {
                 </Typography>
                 <br />
                 <Typography>
-                    My areas of specialisation are data analytics and web development. I am highly interested in using data to solve problems and then
-                    packaging them in user-friendly apps.
+                    I am highly interested in using data to solve problems and packaging them in user-friendly apps.
                 </Typography>
                 <br />
                 <Typography>
-                    Aside from that, I am also the Vice President of NUS Business Analytics Consulting Team, where I'm responsible of planning the syllabus to teach junior analysts and overall management of the club.
+                    I am also the Vice President of NUS Business Analytics Consulting Team, where I'm responsible for syllabus planning and overall management of the club.
                 </Typography>
                 <br />
                 <Typography>
