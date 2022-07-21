@@ -1,6 +1,9 @@
 {
   "files": {
-    "main.js": "/personal-website/static/js/main.05d42448.js",
+    "main.js": "/personal-website/static/js/main.8f074715.js",
+    "static/media/commentar.PNG": "/personal-website/static/media/commentar.20461d0e3b46eeb070a4.PNG",
+    "static/media/keptan.PNG": "/personal-website/static/media/keptan.ba0e9102d1b09014c21a.PNG",
+    "static/media/logo.png": "/personal-website/static/media/logo.c10fb9fe746af17d2bf8.png",
     "static/media/flask.svg": "/personal-website/static/media/flask.618a9d78aa5ce84ac678eb5d6f2127bf.svg",
     "static/media/postgresql.svg": "/personal-website/static/media/postgresql.4d89da07f5b01320923e37a50ee3a5d3.svg",
     "static/media/kaggle.svg": "/personal-website/static/media/kaggle.29d74228f462a4d24caed52cb7cd3228.svg",
@@ -15,9 +18,9 @@
     "static/media/heroku.svg": "/personal-website/static/media/heroku.9dee12cefa8a114bda7e2363938f00ca.svg",
     "static/media/linkedin.svg": "/personal-website/static/media/linkedin.98956d298e14a6384fdb39c42269f2f2.svg",
     "static/media/mongodb.svg": "/personal-website/static/media/mongodb.d930c2c4198d1000c2fb8b7d3177a44c.svg",
-    "main.05d42448.js.map": "/personal-website/static/js/main.05d42448.js.map"
+    "main.8f074715.js.map": "/personal-website/static/js/main.8f074715.js.map"
   },
   "entrypoints": [
-    "static/js/main.05d42448.js"
+    "static/js/main.8f074715.js"
   ]
 }
