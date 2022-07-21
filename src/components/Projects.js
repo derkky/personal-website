@@ -3,6 +3,9 @@ import ProjectCard from "./ProjectCard.js"
 import SectionContainer from "./SectionContainer.js"
 import SectionContentContainer from "./SectionContentContainer.js"
 
+import keptan from "../assets/keptan.PNG"
+import commentar from "../assets/commentar.PNG"
+
 const projects = [
     {
         title: "Keptan Classifier",
@@ -11,7 +14,7 @@ const projects = [
                 <Typography> App which utilises NLP and Random Forest to classify math questions into one of eight categories. </Typography>
             </>,
         tech: ["python", "flask", "react", "heroku"],
-        image: "keptan.PNG",
+        image: keptan,
         link: "http://ra-math-classif.herokuapp.com/"
     },
     {
@@ -21,7 +24,7 @@ const projects = [
                 <Typography> App which automates sentiment analysis, topic modelling, and network analysis of a given Youtube video's comments. </Typography>
             </>,
         tech: ["r"],
-        image: "commentar.PNG",
+        image: commentar,
         link: "https://rendeavors.shinyapps.io/DBA-Shiny-Application/"
     }
 ]

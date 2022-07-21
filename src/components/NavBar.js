@@ -1,6 +1,7 @@
 import { AppBar, Toolbar, Box, IconButton, ButtonGroup, Button, Typography, Menu, MenuItem, Link } from "@mui/material"
 import MenuIcon from "@mui/icons-material/Menu"
 import { useState } from "react"
+import logo from "../assets/logo.png"
 
 import InsertDriveFileIcon from '@mui/icons-material/InsertDriveFile';
 
@@ -68,12 +69,15 @@ const NavBar = () => {
                             sx={{
                                 display: "flex",
                                 alignItems: "center",
+                                gap: 2
                             }}
                         >
                             <Box
-                                sx={{}}
+                                sx={{
+                                    height: "60px"
+                                }}
                             >
-                                <img src="/logo.png" height="100%" width="100%" style={{ objectFit: "contain" }} />
+                                <img src={logo} height="100%" width="100%" style={{ objectFit: "contain" }} />
                             </Box>
                             <Typography sx={{ display: { xs: "none", md: "flex" } }} variant="h4">
                                 Don Foh
@@ -116,11 +120,10 @@ const NavBar = () => {
 
                         <IconButton
                             sx={{ display: { xs: "flex", md: "none" } }}
-                            size="large"
                             color="inherit"
                             onClick={(e) => { setAnchorEl(e.currentTarget) }}
                         >
-                            <MenuIcon />
+                            <MenuIcon sx={{fontSize: "40px"}}/>
                         </IconButton>
 
                     </Box>
