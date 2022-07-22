@@ -9,7 +9,11 @@ import Contact from "./components/Contact.js"
 import { createTheme, ThemeProvider, responsiveFontSizes } from '@mui/material/styles';
 
 let theme = createTheme({
-
+  palette: {
+    primary: {
+      main: "#fff"
+    }
+  }
 })
 
 theme = responsiveFontSizes(theme)
@@ -21,10 +25,10 @@ function App() {
 
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Stack spacing={2} sx={{overflow: "hidden"}}>
+      <Stack spacing={2} sx={{ overflow: "hidden" }}>
         <NavBar />
         <Hero />
-        <About/>
+        <About />
         <Experience />
         <Projects />
         <Contact />

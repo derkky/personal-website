@@ -56,8 +56,8 @@ const NavBar = () => {
     return (
         <>
             <AppBar
-                sx={{ height: "80px" }}
-                color={navbarTransparent ? "transparent" : "default"}
+                sx={{ height: "80px", boxShadow: navbarTransparent ? 0 : 5 }}
+                color={navbarTransparent ? "transparent" : "primary"}
             >
                 <Toolbar
                     disableGutters={true}
@@ -78,7 +78,7 @@ const NavBar = () => {
                     >
 
                         <Link
-                            color={navbarTransparent ? "white" : "inherit"}
+                            color={navbarTransparent ? "primary" : "inherit"}
                             variant="h4"
                             onClick={(e) => {
                                 e.preventDefault()
@@ -103,11 +103,10 @@ const NavBar = () => {
                                 gap: 3
                             }}
                             variant="text"
-                            color={navbarTransparent ? "white" : "inherit"}
                         >
                             {pages.map(page =>
                                 <Button
-                                    color="inherit"
+                                    color={navbarTransparent ? "primary" : "inherit"}
                                     key={page.link}
                                     onClick={() => {
                                         scroll(page.link)
@@ -120,7 +119,7 @@ const NavBar = () => {
                             <Button
                                 variant="outlined"
                                 startIcon={<InsertDriveFileIcon />}
-                                color="inherit"
+                                color={navbarTransparent ? "primary" : "inherit"}
                                 onClick={() => {
                                     window.open("don-foh-resume.pdf")
                                 }}
@@ -131,7 +130,7 @@ const NavBar = () => {
                         </Box>
 
                         <IconButton
-                            sx={{ display: { xs: "flex", md: "none" }}}
+                            sx={{ display: { xs: "flex", md: "none" } }}
                             color={navbarTransparent ? "primary" : "inherit"}
                             onClick={(e) => { setAnchorEl(e.currentTarget) }}
                         >
