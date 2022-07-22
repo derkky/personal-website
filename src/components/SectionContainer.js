@@ -11,12 +11,11 @@ const SectionContainer = (props) => {
                 width: "100vw",
                 alignItems: "center",
                 justifyContent: props.centered ? "center" : "normal",
-                padding: 5
+            }}
+            style={{
+                marginTop: 0
             }}
         >
-
-            <Toolbar />
-
             {props.children}
 
         </Box>

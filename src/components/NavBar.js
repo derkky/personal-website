@@ -1,11 +1,30 @@
 import { AppBar, Toolbar, Box, IconButton, ButtonGroup, Button, Typography, Menu, MenuItem, Link } from "@mui/material"
 import MenuIcon from "@mui/icons-material/Menu"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import logo from "../assets/logo.png"
 
 import InsertDriveFileIcon from '@mui/icons-material/InsertDriveFile';
 
 const NavBar = () => {
+
+    const [navbarTransparent, setNavbarTransparent] = useState(true)
+
+    useEffect(() => {
+        console.log("yo")
+        const handleScroll = (e) => {
+            const heroTop = document.querySelector("#hero").getBoundingClientRect().top
+
+            if ((heroTop + window.innerHeight) <= 0) {
+                setNavbarTransparent(false)
+            } else {
+                setNavbarTransparent(true)
+            }
+
+        }
+        window.addEventListener("scroll", handleScroll)
+
+        return () => window.removeEventListener("scroll", handleScroll)
+    }, [])
 
     const pages = [
         {
@@ -38,6 +57,7 @@ const NavBar = () => {
         <>
             <AppBar
                 sx={{ height: "80px" }}
+                color={navbarTransparent ? "transparent" : "default"}
             >
                 <Toolbar
                     disableGutters={true}
@@ -58,7 +78,7 @@ const NavBar = () => {
                     >
 
                         <Link
-                            color="inherit"
+                            color={navbarTransparent ? "white" : "inherit"}
                             variant="h4"
                             onClick={(e) => {
                                 e.preventDefault()
@@ -83,7 +103,7 @@ const NavBar = () => {
                                 gap: 3
                             }}
                             variant="text"
-                            color="inherit"
+                            color={navbarTransparent ? "white" : "inherit"}
                         >
                             {pages.map(page =>
                                 <Button
@@ -111,11 +131,11 @@ const NavBar = () => {
                         </Box>
 
                         <IconButton
-                            sx={{ display: { xs: "flex", md: "none" } }}
-                            color="inherit"
+                            sx={{ display: { xs: "flex", md: "none" }}}
+                            color={navbarTransparent ? "primary" : "inherit"}
                             onClick={(e) => { setAnchorEl(e.currentTarget) }}
                         >
-                            <MenuIcon sx={{fontSize: "40px"}}/>
+                            <MenuIcon sx={{ fontSize: "40px" }} />
                         </IconButton>
 
                     </Box>
