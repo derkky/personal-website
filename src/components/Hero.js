@@ -2,6 +2,7 @@ import { Box } from "@mui/material"
 import SectionContainer from "./SectionContainer"
 import hero from "../assets/hero.mp4"
 import { useRef, useEffect } from 'react'
+import  React from "react"
 
 const Player = () => {
   const videoRef = useRef(null)
@@ -45,4 +46,4 @@ const Hero = () => {
     )
 }
 
-export default Hero
+export default React.memo(Hero)
