@@ -1,7 +1,30 @@
 import { Box } from "@mui/material"
 import SectionContainer from "./SectionContainer"
-import hero from "../assets/hero.gif"
-import { useRef, useEffect,  } from "react"
+import hero from "../assets/hero.mp4"
+import { useRef, useEffect } from 'react'
+
+const Player = () => {
+  const videoRef = useRef(null)
+
+  useEffect(() => {
+    const { current: videoElement } = videoRef
+    videoElement.setAttribute('muted', '')
+  }, [])
+
+  return (
+    <video
+      src={hero}
+      ref={videoRef}
+      autoPlay
+      playsInline
+      muted
+      loop
+      height="100%" 
+      width="100%" 
+      style={{objectFit: "cover"}}
+    />
+  )
+}
 
 
 const Hero = () => {
@@ -12,7 +35,7 @@ const Hero = () => {
             id="hero"
         >
             <Box sx={{ height: "100vh", width: "100vw" }}>
-                <img src={hero} height="100%" width="100%" style={{objectFit: "cover"}} />
+                <Player />
             </Box>
 
 
