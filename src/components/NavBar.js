@@ -10,7 +10,6 @@ const NavBar = () => {
     const [navbarTransparent, setNavbarTransparent] = useState(true)
 
     useEffect(() => {
-        console.log("yo")
         const handleScroll = (e) => {
             const heroTop = document.querySelector("#hero").getBoundingClientRect().top
 
