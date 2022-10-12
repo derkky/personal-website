@@ -1,7 +1,6 @@
 import { AppBar, Toolbar, Box, IconButton, ButtonGroup, Button, Typography, Menu, MenuItem, Link } from "@mui/material"
 import MenuIcon from "@mui/icons-material/Menu"
 import { useState, useEffect } from "react"
-import logo from "../assets/logo.png"
 
 import InsertDriveFileIcon from '@mui/icons-material/InsertDriveFile';
 

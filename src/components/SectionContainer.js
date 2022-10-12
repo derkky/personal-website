@@ -1,4 +1,4 @@
-import { Box, Toolbar } from "@mui/material"
+import { Box } from "@mui/material"
 
 const SectionContainer = (props) => {
     return (
@@ -11,6 +11,7 @@ const SectionContainer = (props) => {
                 width: "100vw",
                 alignItems: "center",
                 justifyContent: props.centered ? "center" : "normal",
+                backgroundColor: props.bgColor ?? "inherit"
             }}
             style={{
                 marginTop: 0

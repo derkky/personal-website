@@ -6,19 +6,6 @@ import ExperienceCard from "./ExperienceCard"
 
 const experience = [
     {
-        title: "Data Analyst",
-        company: "NTUC LearningHub",
-        duration: "May 2022 to Present",
-        jobDescription: [
-            "Maintain Tableau dashboards and reports",
-            "Conduct User Acceptance Testing",
-            "Communicate with business users to redesign dashboards",
-            "Assist in database migration to data warehouse",
-            "Conduct data validation"
-        ],
-        tech: ["postgresql", "tableau", "python"]
-    },
-    {
         title: "Research Assistant",
         company: "NUS Institute of Operations Research & Analytics",
         duration: "Apr 2022 to Present",
@@ -31,9 +18,19 @@ const experience = [
         tech: ["python", "flask", "react", "heroku"]
     },
     {
+        title: "Software Engineer Consultant",
+        company: "SUPESU",
+        duration: "Aug 2022 to Oct 2022",
+        jobDescription: [
+            "Work with company founders and team of vendors to develop Shopify app",
+            "Collaborated with data scientist to develop ML algorithm to recommend clothing sizes"
+        ],
+        tech: ["js", "react", "express", "mongodb", "heroku", "python"]
+    },
+    {
         title: "Full Stack Developer",
         company: "SUPESU",
-        duration: "Dec 2021 to Present",
+        duration: "Dec 2021 to Aug 2022",
         jobDescription: [
             "Develop sizing recommender algorithm using machine learning",
             "Design and develop responsive website and admin dashboard frontend",
@@ -42,6 +39,19 @@ const experience = [
             "Deploy app on Heroku"
         ],
         tech: ["js", "react", "express", "mongodb", "heroku", "python"]
+    },
+    {
+        title: "Data Analyst",
+        company: "NTUC LearningHub",
+        duration: "May 2022 to Jul 2022",
+        jobDescription: [
+            "Maintain Tableau dashboards and reports",
+            "Conduct User Acceptance Testing",
+            "Communicate with business users to redesign dashboards",
+            "Assist in database migration to data warehouse",
+            "Conduct data validation"
+        ],
+        tech: ["postgresql", "tableau", "python"]
     }
 ]
 

@@ -1,49 +1,37 @@
-import { Box } from "@mui/material"
+import { Typography } from "@mui/material"
 import SectionContainer from "./SectionContainer"
-import hero from "../assets/hero.mp4"
-import { useRef, useEffect } from 'react'
-import  React from "react"
-
-const Player = () => {
-  const videoRef = useRef(null)
-
-  useEffect(() => {
-    const { current: videoElement } = videoRef
-    videoElement.setAttribute('muted', '')
-  }, [])
-
-  return (
-    <video
-      src={hero}
-      ref={videoRef}
-      autoPlay
-      playsInline
-      muted
-      loop
-      height="100%" 
-      width="100%" 
-      style={{objectFit: "cover"}}
-    />
-  )
-}
+import React from "react"
+import SectionContentContainer from "./SectionContentContainer"
 
 
 const Hero = () => {
 
-    return (
-        <SectionContainer
-            centered
-            id="hero"
+  return (
+    <SectionContainer
+      centered
+      id="hero"
+      bgColor="#443742"
+    >
+      <SectionContentContainer>
+        <Typography
+          variant="h2"
+          color="primary"
         >
-            <Box sx={{ height: "100vh", width: "100vw" }}>
-                <Player />
-            </Box>
+          Hi, I'm <strong>Don</strong>.
+        </Typography>
+        <Typography
+          variant="h4"
+          color="primary"
+        >
+          I'm a <strong>full-stack developer</strong> and <strong>data scientist</strong>.
+        </Typography>
+      </SectionContentContainer>
 
 
 
-        </SectionContainer>
+    </SectionContainer>
 
-    )
+  )
 }
 
 export default React.memo(Hero)
