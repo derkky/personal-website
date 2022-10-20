@@ -10,10 +10,10 @@ const experience = [
         company: "NUS Institute of Operations Research & Analytics",
         duration: "Apr 2022 to Present",
         jobDescription: [
-            "Develop a Math word question classifier with over 97% accuracy",
-            "Deploy ML algorithm to responsive web app with React frontend, Flask backend and Heroku",
-            "Research embeddings techniques such as Word2Vec, Doc2Vec, FastText",
-            "Explore various deep learning techniques for NLP such as OpenAI-GPT3 and transfer learning"
+            "Developed a text classification model for customer complaints in Python for ResMed using word embeddings and gradient boosting which improved accuracy by 8%",
+            "Utilised natural language processing techniques and random forest in Python to develop a math word problem classifier with over 97% accuracy",
+            "Conducted in-depth research on deep learning and NLP techniques to improve text classification accuracy and efficiency",
+            "Designed, developed, and deployed an app with Flask backend for machine learning REST API, React for frontend with Material UI styling, and Heroku for end users to easily use the classification algorithm"
         ],
         tech: ["python", "flask", "react", "heroku"]
     },
@@ -32,11 +32,12 @@ const experience = [
         company: "SUPESU",
         duration: "Dec 2021 to Aug 2022",
         jobDescription: [
-            "Develop sizing recommender algorithm using machine learning",
+            "Developed regression model in Python to predict a customer’s chest, waist, and hips given their age, height, and weight",
+            "Cleaned company’s unstructured data store using R and Python to prepare it for further analysis",
             "Design and develop responsive website and admin dashboard frontend",
-            "Design MongoDB database and REST APIs",
+            "Designed and developed REST API with authorization for protected endpoints and pagination",
+            "Conducted data modelling and created entity relation diagrams to design MongoDB database",
             "Integrate app with Shopify REST and GraphQL APIs",
-            "Deploy app on Heroku"
         ],
         tech: ["js", "react", "express", "mongodb", "heroku", "python"]
     },
@@ -45,11 +46,9 @@ const experience = [
         company: "NTUC LearningHub",
         duration: "May 2022 to Jul 2022",
         jobDescription: [
-            "Maintain Tableau dashboards and reports",
-            "Conduct User Acceptance Testing",
-            "Communicate with business users to redesign dashboards",
-            "Assist in database migration to data warehouse",
-            "Conduct data validation"
+            "Liaised with finance and operations departments to understand their business needs to design and develop Tableau dashboards",
+            "Extracted and aggregated relevant data from operational data store using SQL to build dashboards",
+            "Migrated database from MS SQL to Amazon Redshift and performed data validation in SQL and Python to ensure data tallies between source database and target database",
         ],
         tech: ["postgresql", "tableau", "python"]
     }
