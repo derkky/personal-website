@@ -1,45 +1,38 @@
-import { Card, CardHeader, CardContent } from "@mui/material"
+import { Card, CardHeader, CardContent, CardActionArea, CardMedia, Typography } from "@mui/material"
 import TechUsed from "./TechUsed"
-import { TimelineItem, TimelineSeparator, TimelineDot, TimelineConnector, TimelineContent, TimelineOppositeContent } from "@mui/lab"
 
 const ExperienceCard = (props) => {
+
+    const handleClick = () => {
+        props.setDrawerOpen(true)
+        props.setDrawerContent("test")
+    }
+
     return (
-        <TimelineItem>
-            <TimelineOppositeContent
-                sx={{
-                    flex: 0.2,
-                    display: { xs: "none", sm: "none", md: "block" }
-                }}
+
+        <Card>
+            <CardActionArea
+                onClick={() => { handleClick() }}
             >
-                {props.duration}
-            </TimelineOppositeContent>
-            <TimelineSeparator>
-                <TimelineDot />
-                <TimelineConnector />
-            </TimelineSeparator>
-            <TimelineContent>
-                <Card>
-                    <CardHeader
-                        title={props.jobTitle + " | " + props.company}
-                        subheader={props.duration}
-                        subheaderTypographyProps={{
-                            sx: {
-                                display: { xs: "block", sm: "block", md: "none" }
-                            }
-                        }}
-                    />
+                <CardMedia
+                    component="img"
+                    height="300"
 
-                    <CardContent>
-                        <ul style={{paddingLeft: "1em"}}>
-                            {props.jobDescription.map(desc => <li key={desc}> {desc} </li>)}
-                        </ul>
+                />
+                <CardHeader
+                    title={props.title}
+                    sx={{ pb: 0 }}
+                />
+                <CardContent>
+                    <Typography sx={{ mb: 1.5 }} color="text.secondary">
+                        {props.duration}
+                    </Typography>
+                    {props.description}
+                </CardContent>
 
-                        <TechUsed tech={props.tech}/>
-                    </CardContent>
+            </CardActionArea>
 
-                </Card>
-            </TimelineContent>
-        </TimelineItem>
+        </Card>
     )
 }
 

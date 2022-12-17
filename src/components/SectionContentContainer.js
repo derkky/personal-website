@@ -1,25 +1,20 @@
-import { Box, Toolbar } from "@mui/material";
+import { Box,  } from "@mui/material";
 
 const SectionContentContainer = (props) => {
     return (
-        <>
-            <Toolbar />
+        <Box
+            sx={{
+                display: "flex",
+                flexDirection: "column",
+                width: "50%",
+                minWidth: "350px",
+                paddingY: 5
+            }}
+        >
 
-            <Box
-                sx={{
-                    display: "flex",
-                    flexDirection: "column",
-                    width: "50%",
-                    minWidth: "350px",
-                    paddingY: 5
-                }}
-            >
+            {props.children}
 
-                {props.children}
-
-            </Box>
-        </>
-
+        </Box>
     )
 }
 

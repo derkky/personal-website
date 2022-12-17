@@ -1,5 +1,4 @@
-import { Box, Typography, Card, CardHeader, CardContent, Toolbar } from "@mui/material"
-import { Timeline, TimelineItem, TimelineSeparator, TimelineDot, TimelineConnector, TimelineContent, TimelineOppositeContent } from "@mui/lab"
+import { Stack, Typography, Toolbar, } from "@mui/material"
 import SectionContainer from "./SectionContainer"
 import SectionContentContainer from "./SectionContentContainer"
 import ExperienceCard from "./ExperienceCard"
@@ -8,6 +7,7 @@ const experience = [
     {
         title: "Research Assistant",
         company: "NUS Institute of Operations Research & Analytics",
+        description: "Fun times",
         duration: "Apr 2022 to Present",
         jobDescription: [
             "Developed a text classification model for customer complaints in Python for ResMed using word embeddings and gradient boosting which improved accuracy by 8%",
@@ -20,6 +20,7 @@ const experience = [
     {
         title: "Software Engineer Consultant",
         company: "SUPESU",
+        description: "Fun times",
         duration: "Aug 2022 to Oct 2022",
         jobDescription: [
             "Work with company founders and team of vendors to develop Shopify app",
@@ -30,6 +31,7 @@ const experience = [
     {
         title: "Full Stack Developer",
         company: "SUPESU",
+        description: "Fun times",
         duration: "Dec 2021 to Aug 2022",
         jobDescription: [
             "Developed regression model in Python to predict a customer’s chest, waist, and hips given their age, height, and weight",
@@ -44,6 +46,7 @@ const experience = [
     {
         title: "Data Analyst",
         company: "NTUC LearningHub",
+        description: "Fun times",
         duration: "May 2022 to Jul 2022",
         jobDescription: [
             "Liaised with finance and operations departments to understand their business needs to design and develop Tableau dashboards",
@@ -54,61 +57,39 @@ const experience = [
     }
 ]
 
-const Experience = () => {
+const Experience = (props) => {
+
     return (
-
-        <SectionContainer
-            id="experience"
-        >
-
-            <SectionContentContainer
-                sx={{
-                    display: "flex",
-                    flexDirection: "column",
-                    width: { sm: "90vw", md: "50vw" }
-                }}
+        <>
+            <SectionContainer
+                id="experience"
             >
-                <Typography
-                    variant="h2"
-                    marginBottom={5}
-                >
-                    Experience
-                </Typography>
+                <Toolbar />
+                <SectionContentContainer>
+                    <Typography
+                        variant="h2"
+                        marginBottom={5}
+                    >
+                        Experience
+                    </Typography>
 
-                <Timeline
-                    sx={{padding: 0}}
-                >
-                    {experience.map(exp =>
-                        <ExperienceCard
-                            duration={exp.duration}
-                            jobTitle={exp.title}
-                            company={exp.company}
-                            jobDescription={exp.jobDescription}
-                            key={exp.title + exp.company}
-                            tech={exp.tech}
-                        />
-                    )}
+                    <Stack
+                        spacing={3}
+                    >
+                        {experience.map(exp =>
+                            <ExperienceCard
+                                key={exp.title + exp.company}
+                                setDrawerOpen={props.setDrawerOpen}
+                                setDrawerContent={props.setDrawerContent}
+                                title={`${exp.title}, ${exp.company}`}
+                                description={exp.description}
+                                duration={exp.duration}
+                            />)}
+                    </Stack>
+                </SectionContentContainer>
+            </SectionContainer>
+        </>
 
-
-
-                    <TimelineItem>
-                        <TimelineOppositeContent
-                            sx={{
-                                flex: 0.2,
-                                display: { xs: "none", sm: "none", md: "block" }
-                            }}
-                        />
-                        <TimelineSeparator>
-                            <TimelineDot />
-                        </TimelineSeparator>
-                        <TimelineContent />
-                    </TimelineItem>
-                </Timeline>
-
-            </SectionContentContainer>
-
-
-        </SectionContainer>
 
     )
 }

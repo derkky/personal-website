@@ -1,4 +1,4 @@
-import { Card, CardHeader, CardContent, CardMedia } from "@mui/material"
+import { Card, CardHeader, CardContent, CardMedia, CardActionArea } from "@mui/material"
 import TechUsed from "./TechUsed"
 
 const ProjectCard = (props) => {
@@ -9,20 +9,24 @@ const ProjectCard = (props) => {
                 minWidth: "300px"
             }}
         >
-            <CardMedia
-                component="img"
-                image={props.image}
-                height="150"
+            <CardActionArea
                 onClick={() => window.open(props.link)}
-                sx={{cursor: "pointer"}}
-            />
-            <CardHeader
-                title={props.title}
-            />
-            <CardContent >
-                {props.description}
-                <TechUsed tech={props.tech} />
-            </CardContent>
+            >
+                <CardMedia
+                    component="img"
+                    image={props.image}
+                    height="150"
+                    sx={{ cursor: "pointer" }}
+                />
+                <CardHeader
+                    title={props.title}
+                />
+                <CardContent >
+                    {props.description}
+                    <TechUsed tech={props.tech} />
+                </CardContent>
+            </CardActionArea>
+
         </Card>
     )
 }

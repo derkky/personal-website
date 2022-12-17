@@ -10,6 +10,7 @@ const About = () => {
             id="about"
             centered
         >
+            <Toolbar/>
             <SectionContentContainer>
                 <Typography
                     variant="h2"

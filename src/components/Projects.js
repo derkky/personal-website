@@ -29,12 +29,13 @@ const projects = [
     }
 ]
 
-const Projects = () => {
+const Projects = (props) => {
     return (
 
         <SectionContainer
             id="projects"
         >
+            <Toolbar/>
             <SectionContentContainer>
                 <Typography
                     variant="h2"
