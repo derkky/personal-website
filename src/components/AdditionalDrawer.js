@@ -37,7 +37,7 @@ const AdditionalDrawer = (props) => {
                         variant="h2"
                         marginBottom={5}
                     >
-                        TEST
+                        {props.drawerTitle}
                     </Typography>
                     {props.drawerContent}
                 </SectionContentContainer>

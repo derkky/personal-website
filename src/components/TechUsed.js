@@ -28,23 +28,17 @@ const icons = {
 
 const TechUsed = (props) => {
     return (
-        <Box>
-            <Typography
-                marginTop={2}
-                variant="h6"
-            >
-                Technology Used
-            </Typography>
-            <Box
-                sx={{
-                    display: "flex",
-                    gap: "1em"
-                }}
-            >
 
-                {props.tech.map(tech => <SvgIcon fontSize="large" key={tech}> {icons[tech]} </SvgIcon>)}
+        <Box
+            sx={{
+                mt: "1em",
+                display: "flex",
+                gap: "1em"
+            }}
+        >
 
-            </Box>
+            {props.tech.map(tech => <SvgIcon fontSize="large" key={tech}> {icons[tech]} </SvgIcon>)}
+
         </Box>
     )
 }

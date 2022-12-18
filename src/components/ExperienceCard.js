@@ -5,6 +5,7 @@ const ExperienceCard = (props) => {
 
     const handleClick = () => {
         props.setDrawerOpen(true)
+        props.setDrawerTitle(props.title)
         props.setDrawerContent("test")
     }
 
@@ -24,10 +25,13 @@ const ExperienceCard = (props) => {
                     sx={{ pb: 0 }}
                 />
                 <CardContent>
-                    <Typography sx={{ mb: 1.5 }} color="text.secondary">
+                    <Typography variant="subtitle2" sx={{mb: "1em"}}>
                         {props.duration}
                     </Typography>
-                    {props.description}
+                    <Typography sx={{fontSize: "1.5em"}} color="text.secondary"> 
+                        {props.description} 
+                    </Typography>
+                    <TechUsed tech={props.tech} />
                 </CardContent>
 
             </CardActionArea>

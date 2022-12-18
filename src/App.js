@@ -23,6 +23,7 @@ theme = responsiveFontSizes(theme)
 
 function App() {
 
+  const [drawerTitle, setDrawerTitle] = useState("")
   const [drawerOpen, setDrawerOpen] = useState(false)
   const [drawerContent, setDrawerContent] = useState(null)
 
@@ -33,6 +34,7 @@ function App() {
       <Stack spacing={2} sx={{ overflow: "hidden" }}>
         <NavBar />
         <AdditionalDrawer
+          drawerTitle={drawerTitle}
           drawerOpen={drawerOpen}
           setDrawerOpen={setDrawerOpen}
           drawerContent={drawerContent}
@@ -41,10 +43,12 @@ function App() {
         <About />
         <Experience
           setDrawerOpen={setDrawerOpen}
+          setDrawerTitle={setDrawerTitle}
           setDrawerContent={setDrawerContent}
         />
         <Projects
           setDrawerOpen={setDrawerOpen}
+          setDrawerTitle={setDrawerTitle}
           setDrawerContent={setDrawerContent}
         />
         <Contact />
