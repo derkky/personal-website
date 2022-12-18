@@ -46,7 +46,7 @@ const AdditionalDrawer = (props) => {
                     <Box
                         component="img"
                         sx={{
-                            maxWidth: "80%",
+                            maxWidth: "80vw",
                             maxHeight: "30vh"
                         }}
                         src={props.drawerCover}
@@ -71,7 +71,7 @@ const AdditionalDrawer = (props) => {
                         Main takeaways:
                     </Typography>
                     <List
-                        sx={{ listStyleType: "disc", pl: 4 }}
+                        sx={{ listStyleType: "disc", pl: 4, mb: "1.5em" }}
                     >
                         {props.drawerTakeaways.map(takeaway => (
                             <ListItem sx={{ fontSize: "1.2em", display: 'list-item' }} key={takeaway}>
@@ -80,7 +80,7 @@ const AdditionalDrawer = (props) => {
                         ))}
 
                     </List>
-                    {/* props.drawerContent */}
+                    {props.drawerContent}
                 </SectionContentContainer>
             </SectionContainer>
         </Drawer>

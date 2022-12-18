@@ -6,6 +6,7 @@ import SectionContentContainer from "./SectionContentContainer.js"
 import keptan from "../assets/keptan.PNG"
 import commentar from "../assets/commentar.PNG"
 import spotify from "../assets/spotify.png"
+import SpotifyProject from "./drawerContent/SpotifyProject"
 
 const projects = [
     {
@@ -28,7 +29,8 @@ const projects = [
         tech: ["r"],
         image: spotify,
         drawerTakeaways: ["test"],
-        color: "green"
+        color: "rgb(30, 215, 96)",
+        drawerContent: <SpotifyProject/>
     }
 ]
 
@@ -72,6 +74,7 @@ const Projects = (props) => {
                             image={proj.image}
                             link={proj.link}
                             drawerTakeaways={proj.drawerTakeaways}
+                            drawerContent={proj.drawerContent}
                         />)}
 
                 </Box>

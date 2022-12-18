@@ -11,42 +11,45 @@ const experience = [
         title: "Research Assistant (NLP)",
         company: "NUS IORA",
         image: iora,
-        description: "Deep diving into bla",
+        description: "Deep diving into the latest developments in NLP to develop new solutions for a unique use case",
         duration: "Apr 2022 to Dec 2022",
         drawerTakeaways: [
-            "Conducting research",
-            "Recording results"
+            "Improved my ability to deal with changing requirements",
+            "Learned how to compromise with various stakeholders to balance between product performance and usability",
+            "Learned how to look for and read through scholarly articles to gain ideas for my own unique problems"
         ],
-        drawerContent: "Coming soon...",
-        color: "red",
+        drawerContent: "More information coming soon...",
+        color: "white",
         tech: ["python", "flask", "react", "heroku"]
     },
     {
         title: "Full Stack Developer",
         company: "SUPESU",
         image: supesu,
-        description: "Stepping out of my comfort zone",
+        description: "Stepping out of my comfort zone by exploring the unfamiliar world of software engineering",
         duration: "Dec 2021 to Dec 2022",
         drawerTakeaways: [
-            "Full-stack development",
-            "Problem solving",
-            "Communication"
+            "Drastically improved my problem solving and time management skills",
+            "Learnt how to pickup new technologies quickly",
+            "Improved my ability to communicate concisely in standup meetings",
         ],
-        drawerContent: "Coming soon...",
-        color: "blue",
+        drawerContent: "More information coming soon...",
+        color: "#bbb",
         tech: ["js", "react", "express", "mongodb", "heroku", "python"]
     },
     {
         title: "Data Analyst",
         company: "NTUC LearningHub",
         image: lhub,
-        description: "An opportunity to work with big data stores",
+        description: "First time working with big data stores and building dashboards in a professional environment",
         duration: "May 2022 to Jul 2022",
         drawerTakeaways: [
-            "Database architecture"
+            "Familiarized myself with standard practices for database architecture",
+            "Gained experience in communicating with end-users when building dashboards",
+            "Learned how to conduct data validation when migrating databases"
         ],
-        drawerContent: "Coming soon...",
-        color: "yellow",
+        drawerContent: "More information coming soon...",
+        color: "#aaa",
         tech: ["postgresql", "tableau", "python"]
     }
 ]
