@@ -1,7 +1,22 @@
-import { Card, CardHeader, CardContent, CardMedia, CardActionArea } from "@mui/material"
+import { Card, CardHeader, CardContent, CardMedia, CardActionArea, Typography, Box } from "@mui/material"
 import TechUsed from "./TechUsed"
 
 const ProjectCard = (props) => {
+
+    const openDrawer = () => {
+        props.setDrawerOpen(true)
+        props.setDrawerTitle(props.title)
+        props.setDrawerCover(props.image)
+        props.setDrawerContent(props.drawerContent)
+        props.setDrawerSubtitle(props.description)
+        props.setDrawerTakeaways(props.drawerTakeaways)
+        props.setDrawerColor(props.color)
+    }
+
+    const openLink = () => {
+        window.open(props.link)
+    }
+
     return (
         <Card
             sx={{
@@ -10,19 +25,23 @@ const ProjectCard = (props) => {
             }}
         >
             <CardActionArea
-                onClick={() => window.open(props.link)}
+                onClick={props.link ? openLink : openDrawer}
             >
-                <CardMedia
-                    component="img"
-                    image={props.image}
-                    height="150"
-                    sx={{ cursor: "pointer" }}
-                />
+                <Box
+                    sx={{ backgroundColor: props.color }}
+                >
+                    <CardMedia
+                        component="img"
+                        image={props.image}
+                        height="150"
+                    />
+                </Box>
+
                 <CardHeader
                     title={props.title}
                 />
                 <CardContent >
-                    {props.description}
+                    <Typography> {props.description} </Typography>
                     <TechUsed tech={props.tech} />
                 </CardContent>
             </CardActionArea>

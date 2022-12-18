@@ -1,7 +1,7 @@
 import CloseIcon from '@mui/icons-material/Close';
 import SectionContainer from "./SectionContainer"
 import SectionContentContainer from "./SectionContentContainer"
-import { Typography, Box, IconButton, Drawer, } from "@mui/material"
+import { Typography, Box, IconButton, Drawer, List, ListItem } from "@mui/material"
 
 const AdditionalDrawer = (props) => {
     return (
@@ -16,22 +16,42 @@ const AdditionalDrawer = (props) => {
                 }
             }}
         >
-            <Box
-                sx={{
-                    padding: "1.5em",
-                    display: "flex",
-                    flexDirection: "row-reverse"
-                }}
-            >
-                <IconButton
-                    onClick={() => { props.setDrawerOpen(false) }}
-                >
-                    <CloseIcon
-                        sx={{ fontSize: "2em" }}
-                    />
-                </IconButton>
-            </Box>
             <SectionContainer>
+                <Box
+                    sx={{
+                        width: "100%",
+                        padding: "1.5em",
+                        display: "flex",
+                        flexDirection: "row-reverse",
+                        backgroundColor: props.drawerColor
+                    }}
+                >
+                    <IconButton
+                        onClick={() => { props.setDrawerOpen(false) }}
+                    >
+                        <CloseIcon
+                            sx={{ fontSize: "2em" }}
+                        />
+                    </IconButton>
+                </Box>
+                <Box
+                    sx={{
+                        width: "100%",
+                        backgroundColor: props.drawerColor,
+                        display: "flex",
+                        justifyContent: "center",
+                        pb: "2em"
+                    }}
+                >
+                    <Box
+                        component="img"
+                        sx={{
+                            maxWidth: "80%",
+                            maxHeight: "30vh"
+                        }}
+                        src={props.drawerCover}
+                    />
+                </Box>
                 <SectionContentContainer>
                     <Typography
                         variant="h2"
@@ -39,7 +59,28 @@ const AdditionalDrawer = (props) => {
                     >
                         {props.drawerTitle}
                     </Typography>
-                    {props.drawerContent}
+                    <Typography
+                        sx={{ fontSize: "1.5em" }} color="text.secondary"
+                        marginBottom={5}
+                    >
+                        {props.drawerSubtitle}
+                    </Typography>
+                    <Typography
+                        variant="h6"
+                    >
+                        Main takeaways:
+                    </Typography>
+                    <List
+                        sx={{ listStyleType: "disc", pl: 4 }}
+                    >
+                        {props.drawerTakeaways.map(takeaway => (
+                            <ListItem sx={{ fontSize: "1.2em", display: 'list-item' }} key={takeaway}>
+                                {takeaway}
+                            </ListItem>
+                        ))}
+
+                    </List>
+                    {/* props.drawerContent */}
                 </SectionContentContainer>
             </SectionContainer>
         </Drawer>

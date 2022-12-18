@@ -24,7 +24,11 @@ theme = responsiveFontSizes(theme)
 function App() {
 
   const [drawerTitle, setDrawerTitle] = useState("")
+  const [drawerColor, setDrawerColor] = useState("white")
+  const [drawerSubtitle, setDrawerSubtitle] = useState("")
+  const [drawerTakeaways, setDrawerTakeaways] = useState([])
   const [drawerOpen, setDrawerOpen] = useState(false)
+  const [drawerCover, setDrawerCover] = useState(null)
   const [drawerContent, setDrawerContent] = useState(null)
 
   return (
@@ -35,8 +39,12 @@ function App() {
         <NavBar />
         <AdditionalDrawer
           drawerTitle={drawerTitle}
+          drawerSubtitle={drawerSubtitle}
+          drawerTakeaways={drawerTakeaways}
           drawerOpen={drawerOpen}
           setDrawerOpen={setDrawerOpen}
+          drawerColor={drawerColor}
+          drawerCover={drawerCover}
           drawerContent={drawerContent}
         />
         <Hero />
@@ -44,11 +52,19 @@ function App() {
         <Experience
           setDrawerOpen={setDrawerOpen}
           setDrawerTitle={setDrawerTitle}
+          setDrawerTakeaways={setDrawerTakeaways}
+          setDrawerSubtitle={setDrawerSubtitle}
+          setDrawerColor={setDrawerColor}
+          setDrawerCover={setDrawerCover}
           setDrawerContent={setDrawerContent}
         />
         <Projects
           setDrawerOpen={setDrawerOpen}
           setDrawerTitle={setDrawerTitle}
+          setDrawerTakeaways={setDrawerTakeaways}
+          setDrawerSubtitle={setDrawerSubtitle}
+          setDrawerColor={setDrawerColor}
+          setDrawerCover={setDrawerCover}
           setDrawerContent={setDrawerContent}
         />
         <Contact />
