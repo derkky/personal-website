@@ -28,9 +28,13 @@ const projects = [
         description: "Topic modelling with LDA of Spotify Global Top 50 song lyrics to analyze common topics among popular songs and their cultural influences.",
         tech: ["r"],
         image: spotify,
-        drawerTakeaways: ["test"],
+        drawerTakeaways: [
+            "First time performing topic modelling in R with LDA",
+            "Learnt how to reconcile findings from data analysis with scholarly literature in the field",
+            "Practiced my programming skills as I integrated 2 different APIs from different companies to retrieve data"
+        ],
         color: "rgb(30, 215, 96)",
-        drawerContent: <SpotifyProject/>
+        drawerContent: <SpotifyProject />
     }
 ]
 
