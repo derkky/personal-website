@@ -1,8 +1,17 @@
 {
   "files": {
-    "main.js": "/personal-website/static/js/main.64db6329.js",
+    "main.js": "/personal-website/static/js/main.9a746c44.js",
     "static/media/commentar.PNG": "/personal-website/static/media/commentar.20461d0e3b46eeb070a4.PNG",
+    "static/media/NTUCLHUB.png": "/personal-website/static/media/NTUCLHUB.2c47967112da1d8b30cb.png",
+    "static/media/IORA_Banner.png": "/personal-website/static/media/IORA_Banner.dfc5aa3874a5abaad7a8.png",
+    "static/media/spotify5.png": "/personal-website/static/media/spotify5.0ae1f7432a1bad3c4263.png",
+    "static/media/spotify.png": "/personal-website/static/media/spotify.c676f9803ac78532a416.png",
     "static/media/keptan.PNG": "/personal-website/static/media/keptan.ba0e9102d1b09014c21a.PNG",
+    "static/media/SUPESU_logo.webp": "/personal-website/static/media/SUPESU_logo.b1239991aea18834f304.webp",
+    "static/media/spotify2.png": "/personal-website/static/media/spotify2.769b96e62de177de42ac.png",
+    "static/media/spotify3.png": "/personal-website/static/media/spotify3.e625701bd2c98e29406e.png",
+    "static/media/spotify4.png": "/personal-website/static/media/spotify4.b028690197cf8b1156ed.png",
+    "static/media/spotify6.png": "/personal-website/static/media/spotify6.d6f3d1d7d2292e90366b.png",
     "static/media/flask.svg": "/personal-website/static/media/flask.618a9d78aa5ce84ac678eb5d6f2127bf.svg",
     "static/media/postgresql.svg": "/personal-website/static/media/postgresql.4d89da07f5b01320923e37a50ee3a5d3.svg",
     "static/media/kaggle.svg": "/personal-website/static/media/kaggle.29d74228f462a4d24caed52cb7cd3228.svg",
@@ -17,9 +26,9 @@
     "static/media/heroku.svg": "/personal-website/static/media/heroku.9dee12cefa8a114bda7e2363938f00ca.svg",
     "static/media/linkedin.svg": "/personal-website/static/media/linkedin.98956d298e14a6384fdb39c42269f2f2.svg",
     "static/media/mongodb.svg": "/personal-website/static/media/mongodb.d930c2c4198d1000c2fb8b7d3177a44c.svg",
-    "main.64db6329.js.map": "/personal-website/static/js/main.64db6329.js.map"
+    "main.9a746c44.js.map": "/personal-website/static/js/main.9a746c44.js.map"
   },
   "entrypoints": [
-    "static/js/main.64db6329.js"
+    "static/js/main.9a746c44.js"
   ]
 }
