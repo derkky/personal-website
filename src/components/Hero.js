@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material"
+import { Toolbar, Typography } from "@mui/material"
 import SectionContainer from "./SectionContainer"
 import React from "react"
 import SectionContentContainer from "./SectionContentContainer"
@@ -12,6 +12,7 @@ const Hero = () => {
       id="hero"
       bgColor="#443742"
     >
+      <Toolbar />
       <SectionContentContainer>
         <Typography
           variant="h2"

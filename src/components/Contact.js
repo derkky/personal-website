@@ -1,4 +1,4 @@
-import { IconButton, SvgIcon, Typography, Box } from "@mui/material"
+import { IconButton, SvgIcon, Typography, Box, Toolbar } from "@mui/material"
 import SectionContainer from "./SectionContainer"
 import SectionContentContainer from "./SectionContentContainer"
 
@@ -34,6 +34,7 @@ const Contact = () => {
             id="contact"
             centered
         >
+            <Toolbar/>
             <SectionContentContainer>
                 <Typography
                     align="center"

@@ -1,45 +1,59 @@
-import { Card, CardHeader, CardContent } from "@mui/material"
+import { Card, CardHeader, CardContent, CardActionArea, CardMedia, Typography, Box } from "@mui/material"
 import TechUsed from "./TechUsed"
-import { TimelineItem, TimelineSeparator, TimelineDot, TimelineConnector, TimelineContent, TimelineOppositeContent } from "@mui/lab"
 
 const ExperienceCard = (props) => {
+
+    const handleClick = () => {
+        props.setDrawerOpen(true)
+        props.setDrawerTitle(props.title)
+        props.setDrawerCover(props.image)
+        props.setDrawerContent(props.drawerContent)
+        props.setDrawerSubtitle(props.description)
+        props.setDrawerTakeaways(props.drawerTakeaways)
+        props.setDrawerColor(props.color)
+    }
+
     return (
-        <TimelineItem>
-            <TimelineOppositeContent
-                sx={{
-                    flex: 0.2,
-                    display: { xs: "none", sm: "none", md: "block" }
-                }}
+
+        <Card>
+            <CardActionArea
+                onClick={() => { handleClick() }}
             >
-                {props.duration}
-            </TimelineOppositeContent>
-            <TimelineSeparator>
-                <TimelineDot />
-                <TimelineConnector />
-            </TimelineSeparator>
-            <TimelineContent>
-                <Card>
-                    <CardHeader
-                        title={props.jobTitle + " | " + props.company}
-                        subheader={props.duration}
-                        subheaderTypographyProps={{
-                            sx: {
-                                display: { xs: "block", sm: "block", md: "none" }
-                            }
+                <Box
+                    sx={{
+                        backgroundColor: props.color
+                    }}
+                >
+                    <CardMedia
+                        component="img"
+                        height="300"
+                        src={props.image}
+                        sx={{
+                            maxWidth: "80%",
+                            display: "block",
+                            margin: "auto",
+                            objectFit: "contain",
                         }}
                     />
+                </Box>
 
-                    <CardContent>
-                        <ul style={{paddingLeft: "1em"}}>
-                            {props.jobDescription.map(desc => <li key={desc}> {desc} </li>)}
-                        </ul>
+                <CardHeader
+                    title={props.title}
+                    sx={{ pb: 0 }}
+                />
+                <CardContent>
+                    <Typography variant="subtitle2" sx={{ mb: "1em" }}>
+                        {props.duration}
+                    </Typography>
+                    <Typography sx={{ fontSize: "1.5em" }} color="text.secondary">
+                        {props.description}
+                    </Typography>
+                    <TechUsed tech={props.tech} />
+                </CardContent>
 
-                        <TechUsed tech={props.tech}/>
-                    </CardContent>
+            </CardActionArea>
 
-                </Card>
-            </TimelineContent>
-        </TimelineItem>
+        </Card>
     )
 }
 
