@@ -1,7 +1,7 @@
 import CloseIcon from '@mui/icons-material/Close';
 import SectionContainer from "./SectionContainer"
 import SectionContentContainer from "./SectionContentContainer"
-import { Typography, Box, IconButton, Drawer, List, ListItem } from "@mui/material"
+import { Typography, Box, Fab, Drawer, List, ListItem } from "@mui/material"
 
 const AdditionalDrawer = (props) => {
     return (
@@ -26,13 +26,20 @@ const AdditionalDrawer = (props) => {
                         backgroundColor: props.drawerColor
                     }}
                 >
-                    <IconButton
+                    <Fab
                         onClick={() => { props.setDrawerOpen(false) }}
+                        sx={{
+                            position: "fixed", 
+                            opacity: 0.5,
+                            "&:hover": {
+                                opacity: 1
+                            }
+                        }}
                     >
                         <CloseIcon
                             sx={{ fontSize: "2em" }}
                         />
-                    </IconButton>
+                    </Fab>
                 </Box>
                 <Box
                     sx={{
