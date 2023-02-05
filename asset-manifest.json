@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.js": "/static/js/main.9da65c1f.js",
+    "main.js": "/static/js/main.91b603d5.js",
     "static/media/commentar.PNG": "/static/media/commentar.20461d0e3b46eeb070a4.PNG",
     "static/media/NTUCLHUB.png": "/static/media/NTUCLHUB.2c47967112da1d8b30cb.png",
     "static/media/IORA_Banner.png": "/static/media/IORA_Banner.dfc5aa3874a5abaad7a8.png",
+    "static/media/htx.png": "/static/media/htx.414dc73e795c3e6317a0.png",
     "static/media/spotify5.png": "/static/media/spotify5.0ae1f7432a1bad3c4263.png",
     "static/media/spotify.png": "/static/media/spotify.c676f9803ac78532a416.png",
     "static/media/keptan.PNG": "/static/media/keptan.ba0e9102d1b09014c21a.PNG",
     "static/media/SUPESU_logo.webp": "/static/media/SUPESU_logo.b1239991aea18834f304.webp",
+    "static/media/wyd.png": "/static/media/wyd.62dab6d03da319a101a0.png",
     "static/media/spotify2.png": "/static/media/spotify2.769b96e62de177de42ac.png",
     "static/media/spotify3.png": "/static/media/spotify3.e625701bd2c98e29406e.png",
     "static/media/spotify4.png": "/static/media/spotify4.b028690197cf8b1156ed.png",
@@ -17,6 +19,7 @@
     "static/media/kaggle.svg": "/static/media/kaggle.29d74228f462a4d24caed52cb7cd3228.svg",
     "static/media/react.svg": "/static/media/react.8e63d418a6421cc2662e234ac8af7313.svg",
     "static/media/python.svg": "/static/media/python.e146c98dc5517bd9c7e63d6f63a6a1df.svg",
+    "static/media/amazonec2.svg": "/static/media/amazonec2.5573e2fd3987d839d13b542d9ac20c47.svg",
     "static/media/javascript.svg": "/static/media/javascript.5ee3c82fade3a5a9c98dc18702a4f717.svg",
     "static/media/tableau.svg": "/static/media/tableau.c946b256f5c1a0dcef05fc15bad237b1.svg",
     "static/media/r.svg": "/static/media/r.f35640a615a68899aa74c8daacac3ec8.svg",
@@ -26,9 +29,12 @@
     "static/media/heroku.svg": "/static/media/heroku.9dee12cefa8a114bda7e2363938f00ca.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.98956d298e14a6384fdb39c42269f2f2.svg",
     "static/media/mongodb.svg": "/static/media/mongodb.d930c2c4198d1000c2fb8b7d3177a44c.svg",
-    "main.9da65c1f.js.map": "/static/js/main.9da65c1f.js.map"
+    "static/media/pytorch.svg": "/static/media/pytorch.e64d02bdfe5507b5c8ec2ea495753d36.svg",
+    "static/media/nginx.svg": "/static/media/nginx.4ced6938d923829de254d506f8e04aaf.svg",
+    "static/media/fastapi.svg": "/static/media/fastapi.0d5b8486286b67dd2b7c9d51b5deb794.svg",
+    "main.91b603d5.js.map": "/static/js/main.91b603d5.js.map"
   },
   "entrypoints": [
-    "static/js/main.9da65c1f.js"
+    "static/js/main.91b603d5.js"
   ]
 }
