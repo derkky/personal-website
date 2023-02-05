@@ -1,7 +1,7 @@
 {
   "name": "personal_website",
   "version": "0.1.0",
-  "homepage": "https://derkky.github.io/personal-website",
+  "homepage": "https://donfoh.com",
   "private": false,
   "dependencies": {
     "@emotion/react": "^11.7.1",

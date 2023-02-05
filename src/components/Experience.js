@@ -4,9 +4,24 @@ import SectionContentContainer from "./SectionContentContainer"
 import ExperienceCard from "./ExperienceCard"
 import iora from "../assets/IORA_Banner.png"
 import lhub from "../assets/NTUCLHUB.png"
+import htx from "../assets/htx.png"
 import supesu from "../assets/SUPESU_logo.webp"
 
 const experience = [
+    {
+        title: "Data Science Intern",
+        company: "HTX",
+        image: htx,
+        description: "Leveraging machine learning and full-stack development to create tools to fight crime",
+        duration: "Jan 2023 to May 2023",
+        drawerTakeaways: [
+            "Greatly improved my ability to self-learn new concepts",
+            "Stretched my limits to deliver requirements while juggling a 29MC course load",
+        ],
+        drawerContent: "More information coming soon...",
+        color: "#5c068c",
+        tech: ["python", "fastapi", "react", "pytorch"]
+    },
     {
         title: "Research Assistant (NLP)",
         company: "NUS IORA",
@@ -34,7 +49,7 @@ const experience = [
             "Improved my ability to communicate concisely in standup meetings",
         ],
         drawerContent: "More information coming soon...",
-        color: "#bbb",
+        color: "white",
         tech: ["js", "react", "express", "mongodb", "heroku", "python"]
     },
     {
@@ -49,7 +64,7 @@ const experience = [
             "Learned how to conduct data validation when migrating databases"
         ],
         drawerContent: "More information coming soon...",
-        color: "#aaa",
+        color: "white",
         tech: ["postgresql", "tableau", "python"]
     }
 ]

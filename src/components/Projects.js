@@ -7,14 +7,15 @@ import keptan from "../assets/keptan.PNG"
 import commentar from "../assets/commentar.PNG"
 import spotify from "../assets/spotify.png"
 import SpotifyProject from "./drawerContent/SpotifyProject"
+import wyd from "../assets/wyd.png"
 
 const projects = [
     {
         title: "Keptan Classifier",
-        description: "App which utilises NLP and Random Forest to classify math questions into one of eight categories.",
-        tech: ["python", "flask", "react", "heroku"],
+        description: "App which utilises NLP and Random Forest to classify math questions into one of eight categories. Originally deployed on Heroku, now on AWS EC2.",
+        tech: ["python", "flask", "react", "heroku", "ec2", "nginx"],
         image: keptan,
-        link: "http://ra-math-classif.herokuapp.com/"
+        link: "http://math-clf-app.donfoh.com/"
     },
     {
         title: "commentaR",
@@ -22,6 +23,13 @@ const projects = [
         tech: ["r"],
         image: commentar,
         link: "https://rendeavors.shinyapps.io/DBA-Shiny-Application/"
+    },
+    {
+        title: "wyd.",
+        description: "App to share what you're doing with the world.",
+        tech: ["react", "express", "nginx", "ec2"],
+        image: wyd,
+        link: "http://wyd-app.donfoh.com/"
     },
     {
         title: "Topic Modelling of Spotify Top 50 Lyrics",

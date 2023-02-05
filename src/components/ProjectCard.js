@@ -26,6 +26,7 @@ const ProjectCard = (props) => {
         >
             <CardActionArea
                 onClick={props.link ? openLink : openDrawer}
+                sx={{height: "100%", display: "flex", flexDirection: "column", alignItems: "stretch", justifyContent: "flex-start"}}
             >
                 <Box
                     sx={{ backgroundColor: props.color }}
@@ -40,8 +41,8 @@ const ProjectCard = (props) => {
                 <CardHeader
                     title={props.title}
                 />
-                <CardContent >
-                    <Typography> {props.description} </Typography>
+                <CardContent sx={{flex: 1, display: "flex", flexDirection: "column"}}>
+                    <Typography sx={{flex: 1}}> {props.description} </Typography>
                     <TechUsed tech={props.tech} />
                 </CardContent>
             </CardActionArea>

@@ -33,6 +33,7 @@ const ExperienceCard = (props) => {
                             display: "block",
                             margin: "auto",
                             objectFit: "contain",
+                            padding: "1.5em"
                         }}
                     />
                 </Box>
