@@ -24,7 +24,7 @@ const Hero = () => {
           variant="h4"
           color="primary"
         >
-          I'm a <strong>full-stack developer</strong> and <strong>data scientist</strong>.
+          I'm <strong>passionate</strong> about using <strong>data</strong> to <strong>solve problems</strong>.
         </Typography>
       </SectionContentContainer>
 

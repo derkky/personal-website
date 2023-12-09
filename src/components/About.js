@@ -1,16 +1,53 @@
-import { Box, Typography, Toolbar, } from "@mui/material"
+import { Box, Typography, Toolbar, List, ListItem, ListItemIcon, ListItemText, ListItemButton } from "@mui/material"
 import SectionContainer from "./SectionContainer"
 import SectionContentContainer from "./SectionContentContainer"
-
+import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
+import CodeIcon from '@mui/icons-material/Code';
+import RecordVoiceOverIcon from '@mui/icons-material/RecordVoiceOver';
+import ScienceIcon from '@mui/icons-material/Science';
+import RestaurantIcon from '@mui/icons-material/Restaurant';
+import LockIcon from '@mui/icons-material/Lock';
+import LandscapeIcon from '@mui/icons-material/Landscape';
 
 const About = () => {
+    const listPoints = [
+        {
+            icon: <AttachMoneyIcon/>,
+            text: "Learned how to prepare and analyze financial statements (and balance the damned Balance Sheet!)"
+        },
+        {
+            icon: <CodeIcon/>,
+            text: "Spearheaded the development of a Shopify app for a fashion startup from scratch as a Full-Stack Developer"
+        },
+        {
+            icon: <RecordVoiceOverIcon/>,
+            text: "Extensively studied and written a countless number of essays on communications theories"
+        },
+        {
+            icon: <ScienceIcon/>,
+            text: "Developed novel methods for text vectorization for a listed medical device company"
+        },
+        {
+            icon: <RestaurantIcon/>,
+            text: "Learned how to cook beloved cai png dishes while studying in Europe"
+        },
+        {
+            icon: <LockIcon/>,
+            text: "Worked on classified projects as an A.I. intern for the government"
+        },
+        {
+            icon: <LandscapeIcon/>,
+            text: "Climbed some of the most dangerous mountains in the world (despite a crippling fear of heights)"
+        }
+    ]
+
     return (
 
         <SectionContainer
             id="about"
             centered
         >
-            <Toolbar/>
+            <Toolbar />
             <SectionContentContainer>
                 <Typography
                     variant="h2"
@@ -20,25 +57,36 @@ const About = () => {
                 </Typography>
 
                 <Typography>
-                    I am a final year undergraduate at NUS pursuing a double degree in Business and Communications and New Media.
+                    I love learning new things and challenging myself. In the past 4 years I have:
                 </Typography>
-                <br />
+                <List>
+                    {listPoints.map((point, idx) => 
+                        <ListItem key={idx} sx={{
+                            "&:hover": {
+                                bgcolor: "#bbb"
+                            }
+                        }}>
+                            <ListItemIcon>
+                                {point.icon}
+                            </ListItemIcon>
+                            <ListItemText>
+                                {point.text}
+                            </ListItemText>
+                        </ListItem>
+                    )}
+                </List>
                 <Typography>
-                    I am highly interested in using data to solve problems and packaging them in user-friendly apps.
+                    … and much more!
                 </Typography>
-                <br />
+                <br/>
                 <Typography>
-                    I am also the Vice President of NUS Business Analytics Consulting Team, where I'm responsible for syllabus planning and overall management of the club.
+                    In my free time, I enjoy reading, watching anime, and cooking.
                 </Typography>
-                <br />
+                <br/>
                 <Typography>
-                    I am currently working on <strong> Tele-Sticker</strong>, an app which streamlines the sticker-making process in Telegram.
+                    I also graduated from the National University of Singapore with a double degree in Business and Communications and New Media.
                 </Typography>
-                <br />
-                <Typography>
-                    When I'm not coding, I enjoy reading and watching movies.
-                </Typography>
-                <br />
+
             </SectionContentContainer>
 
         </SectionContainer>
